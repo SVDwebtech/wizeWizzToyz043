@@ -1,0 +1,11 @@
+{
+  "name": "goldbergtobacco054",
+  "version": "1.0.0",
+  "description": "online shop for tobacco products",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Schalk van Dyk",
+  "license": "ISC"
+}
