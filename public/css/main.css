@@ -1,5 +1,18 @@
-h1 {
-  color: rgb(204, 255, 0);
-}
+/* Error: Undefined variable.
+ *    ,
+ * 93 | $lingrad-cardPhotoBg: linear-gradient(155deg, rgba($cp-darkGreen, 1) 5%, rgba($cp-green, 1) 35%, rgba($cp-white, 1) 75%);
+ *    |                                                    ^^^^^^^^^^^^^
+ *    '
+ *   sass\abstracts\_variables.scss 93:52  @import
+ *   sass\main.scss 2:9                    root stylesheet */
 
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 93 \2502  $lingrad-cardPhotoBg: linear-gradient(155deg, rgba($cp-darkGreen, 1) 5%, rgba($cp-green, 1) 35%, rgba($cp-white, 1) 75%);\d\a    \2502                                                     ^^^^^^^^^^^^^\a    \2575 \a   sass\\abstracts\\_variables.scss 93:52  @import\a   sass\\main.scss 2:9                    root stylesheet";
+}

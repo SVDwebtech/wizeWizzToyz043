@@ -1,0 +1,104 @@
+// /* CSS HEX */
+// --oxford-blue: #011338ff;
+// --dark-goldenrod: #c7912bff;
+// --harvest-gold: #f5aa15ff;
+// --gold: #ffd60aff;
+// --eggshell: #e1e1caff;
+
+// /* CSS HSL */
+// --oxford-blue: hsla(220, 96%, 11%, 1);
+// --dark-goldenrod: hsla(39, 64%, 47%, 1);
+// --harvest-gold: hsla(40, 92%, 52%, 1);
+// --gold: hsla(50, 100%, 52%, 1);
+// --eggshell: hsla(60, 28%, 84%, 1);
+
+// /* SCSS HEX */
+// $oxford-blue: #011338ff;
+// $dark-goldenrod: #c7912bff;
+// $harvest-gold: #f5aa15ff;
+// $gold: #ffd60aff;
+// $eggshell: #e1e1caff;
+
+// /* SCSS HSL */
+// $oxford-blue: hsla(220, 96%, 11%, 1);
+// $dark-goldenrod: hsla(39, 64%, 47%, 1);
+// $harvest-gold: hsla(40, 92%, 52%, 1);
+// $gold: hsla(50, 100%, 52%, 1);
+// $eggshell: hsla(60, 28%, 84%, 1);
+
+/* website colors */
+$cp-oxford-blue: rgba(1, 19, 56, 1);
+$cp-dark-goldenrod: rgba(199, 145, 43, 1);
+$cp-harvest-gold: rgba(245, 170, 21, 1);
+$cp-gold: rgba(255, 214, 10, 1);
+$cp-eggshell: rgba(225, 225, 202, 1);
+$cp-dark: #1E2020;
+$cp-darkGrey: #3e3e3e;
+$cp-grey: #898989;
+$cp-lightGrey: #d7d7d7;
+$cp-white: #f0f0f0;
+
+/* website colors */
+$cf-oxford-blue: rgba(1, 19, 56, 1);
+$cf-dark-goldenrod: rgba(199, 145, 43, 1);
+$cf-harvest-gold: rgba(245, 170, 21, 1);
+$cf-gold: rgba(255, 214, 10, 1);
+$cf-eggshell: rgba(225, 225, 202, 1);
+$cf-dark: #1E2020;
+$cf-darkGrey: #3e3e3e;
+$cf-grey: #898989;
+$cf-lightGrey: #d7d7d7;
+$cf-white: #f0f0f0;
+
+// /* SCSS Gradient */
+// $gradient-top: linear-gradient(0deg, #011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+// $gradient-right: linear-gradient(90deg, #011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+// $gradient-bottom: linear-gradient(180deg, #011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+// $gradient-left: linear-gradient(270deg, #011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+// $gradient-top-right: linear-gradient(45deg, #011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+// $gradient-bottom-right: linear-gradient(135deg, #011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+// $gradient-top-left: linear-gradient(225deg, #011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+// $gradient-bottom-left: linear-gradient(315deg, #011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+// $gradient-radial: radial-gradient(#011338ff, #c7912bff, #f5aa15ff, #ffd60aff, #e1e1caff);
+
+// font-size
+$fs-h1: 3rem;
+$fs-h2: 2.5rem;
+$fs-h3: 2rem;
+$fs-h4: 1.5rem;
+$fs-btn: 1.5rem;
+$fs-p: 1rem;
+
+// border-radius
+$br-sm: .25rem;
+$br-m: .5rem;
+$br-l: 1rem;
+
+// box-shadow
+$bs-dark: 0 0 5px 2px rgba(0, 0, 0, .4);
+$bs-btn: 0px 1px 2px 1px rgba(0, 0, 0, .5);
+$bs-btnHover: 0px 8px 40px 3px rgba(0, 0, 0, .7);
+
+//margin
+$mb-section: 4rem;
+$mb-h1: 4rem;
+$mb-btn: 4rem;
+$mb-h2: 2rem;
+$mb-h3: 1.5rem;
+$mb-h4: 1rem;
+$mb-p: 1rem;
+
+
+// linear-gradient
+$lingrad-cardPhotoBg: linear-gradient(155deg, rgba($cp-darkGreen, 1) 5%, rgba($cp-green, 1) 35%, rgba($cp-white, 1) 75%);
+$lingrad-cardPhotoOl: linear-gradient(0deg, rgba($cp-dark, .75) 8%, rgba($cp-dark, .45) 25%, transparent 50%);
+
+$lingrad-cardPhotoBackBg: linear-gradient(135deg, rgba($cp-darkBlue, 1) 35%, rgba($cp-darkBlue, .85) 55%, rgba($cp-darkBlue, .65) 75%, rgba($cp-darkBlue, .45) 85%, rgba($cp-white, .25));
+
+
+
+
+
+
+
+
