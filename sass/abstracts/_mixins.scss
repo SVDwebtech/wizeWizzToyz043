@@ -63,12 +63,22 @@ ORDER: base + typography > general layout + grid > page layout > components
 	color: transparent;
 }
 
-/////////////////////////////////////////////////////////////////////////////
-// btn mixins
-/////////////////////////////////////////////////////////////////////////////
-
-@mixin btnIconSize {
-	width: clamp(3.5rem, 9vw, 4.5rem);
-	height: clamp(3.5rem, 9vw, 4.5rem);
+////////////////////////////////////////////////////////////
+/// display flex column
+@mixin displayFlexColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+////////////////////////////////////////////////////////////
+/// display flex row
+@mixin displayFlexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
 
