@@ -11,6 +11,7 @@
   "author": "Schalk van Dyk",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.3",
     "sass": "^1.71.1"
   },
