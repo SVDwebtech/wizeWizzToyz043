@@ -9,41 +9,29 @@
 }
 
 html {
-	// smoothes automatic scroll when you click on a navlink
-	scroll-behavior:smooth;
-	/* 	1rem is equal to 10px */
-	/* 	because 10px / 10 is equal to 1rem */
-	/* 	therefore 30px is equal to 3rem */
-	/* 	the default font size of the browser is 16px */
+	scroll-behavior: smooth;
 	/* 	10px / 16px *100 = 62.5% */
 	font-size: 62.5%; // 1rem = 10px
-
 	@include respond(tab-port) {
-	/* 	12px / 16px *100 = 75% */
-		font-size: 68%; // 1.4rem = 16.8px
+	/* 	11px / 16px *100 = 68.75% */
+		font-size: 68.75%; // 1.6rem = 17.6px
 	}
-
 	@include respond(tab-land) {
-	/* 	14px / 16px *100 = 81.25% */
-		// font-size: 81.25%; // 1.4rem = 18.2px 
-		font-size: 72%; // 1rem = 10px
+	/* 	12px / 16px *100 = 75% */
+		font-size: 75%; // 1.6rem = 19.2px 
 	}
-
 	@include respond(desk) {
-	/* 	16px / 16px *100 = 100% */
-		font-size: 76%; // 1.4rem = 21px
+	/* 	13px / 16px *100 = 81.25% */
+		font-size: 81.25%; // 1.6rem = 20.8px 
 	}
-	
 	@include respond(big-desk) {
-	/* 	18px / 16px *100 = 112.5% */
-		font-size: 80%; // 1.4rem = 25.2px
+	/* 	15px / 16px *100 = 93.75% */
+		font-size: 93.75%; // 1.6rem = 24px
 	}
-
-	// background-color: $cp-lightGrey; // This affects the headingH2Container icons
 }
 
 body {
-	background-color: $cp-white;
+	background-color: $cp-dark;
 	/* This makes dealing with the sizes of elements much easier, 
 		and generally eliminates a number of pitfalls you can stumble on
 		 while laying out your content. */
