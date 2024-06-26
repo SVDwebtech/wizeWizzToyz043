@@ -1,8 +1,8 @@
 {
-  "name": "goldbergtobacco054",
+  "name": "wizewizztoyz043",
   "version": "1.0.0",
-  "description": "online shop for tobacco products",
-  "main": "index.js",
+  "description": "online shop for educational toys for children and young adults",
+  "main": "app.js",
   "scripts": {
     "watch:sass": "sass --watch sass/main.scss public/css/main.css",
     "nodemon-watch": "nodemon index.js -e *",

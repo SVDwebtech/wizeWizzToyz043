@@ -11,6 +11,15 @@ body {
 	text-align: center;
 	line-height: 1.6;
 }
+.header {
+	&__headingH1 {
+	color: $cf-white;
+	font-family: 'Rum Raisin', sans-serif;
+	font-size: clamp(2.2rem, 6.5vw, 2.6rem);
+	text-align: center;
+	line-height: 1.2;
+	}
+}
 .paragraph {	
 }
 .btn {	

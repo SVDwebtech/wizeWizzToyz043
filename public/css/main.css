@@ -92,6 +92,14 @@ body {
   line-height: 1.6;
 }
 
+.header__headingH1 {
+  color: #f0f0f0;
+  font-family: "Rum Raisin", sans-serif;
+  font-size: clamp(2.2rem, 6.5vw, 2.6rem);
+  text-align: center;
+  line-height: 1.2;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -128,10 +136,6 @@ body {
   border-right: 2px solid #898989;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.7);
   transform: translateY(-1px);
-}
-
-.header {
-  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */
