@@ -20,7 +20,20 @@ body {
 	line-height: 1.2;
 	}
 }
-.paragraph {	
+.headingH4 {
+	&--socialMediaComponent {
+		color: $cp-white;
+		font-size: clamp(1.6rem, 5.3vw, 1.8rem);
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+}
+.paragraph {
+	&--socialMediaComponent {
+		color: $cp-white;
+		font-weight: 700;
+		letter-spacing: 1px;
+	}	
 }
 .btn {	
 }
