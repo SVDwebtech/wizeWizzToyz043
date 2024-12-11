@@ -1,19 +1,18 @@
 /* website colors */
 /* website colors */
 /*
-0px			- 		600px:			mobile 		--> Mobile First Approach 
-											   	    (where normal styles apply)
+0px		- 		600px:			mobile 	--> 	Mobile First Approach (where normal styles apply)
 600px		- 		900px: 			tab-port 	-->	Tablet Portrait 
 900px		-		1200px:			tab-land	-->	Tablet Landscape
-1200px		-		1800px:			desk		-->	Desktop 
+1200px	-		1800px:			desk		-->	Desktop 
 1800px +							big-desk	-->	Big Desktop
 
 REMEMBER: 1em = 16px;
 $breakpoint argument choices
 	- tab-port and >	600 --> 900 	: min-width: 37.5em (600/16)
 	- tab-land and >	900 --> 1200	: min-width: 56.25em (900/16)
-	- desk and >		1200 --> 1800	: min-width: 75em (1200/16)
-	- big-desk and >    1800 +			: min-width: 112.5em (1800/16)
+	- desk and >	1200 --> 1800	: min-width: 75em (1200/16)
+	- big-desk and >  1800 +		: min-width: 112.5em (1800/16)
 
 ORDER: base + typography > general layout + grid > page layout > components
 
@@ -100,6 +99,67 @@ body {
   line-height: 1.2;
 }
 
+.headingH2 {
+  color: #efefef;
+  font-size: clamp(2rem, 5.3vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: 3px;
+  line-height: 1;
+  text-align: center;
+}
+.headingH2--figcaptionHeadingH2Wize {
+  color: rgb(186, 0, 0);
+}
+.headingH2--figcaptionHeadingH2Wizz {
+  color: rgb(0, 171, 3);
+}
+.headingH2--figcaptionHeadingH2Toyz {
+  color: #003cb3;
+}
+
+.headingH3 {
+  color: #efefef;
+  font-size: clamp(1.8rem, 5.3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-align: center;
+}
+.headingH3--copyright {
+  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.headingH3--copyrightSymbol {
+  font-size: clamp(1.6rem, 5.3vw, 1.8rem);
+}
+.headingH3--copyrightName {
+  font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+  font-weight: 700;
+}
+.headingH3--copyrightNameWize {
+  color: rgb(186, 0, 0);
+}
+.headingH3--copyrightNameWizz {
+  color: rgb(0, 171, 3);
+}
+.headingH3--copyrightNameToyz {
+  color: #003cb3;
+}
+.headingH3--webdev {
+  font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.headingH3--webdevIntro {
+  color: rgba(239, 239, 239, 0.95);
+}
+.headingH3--webdevName {
+  color: #00a9fe;
+  text-decoration: underline 2px solid;
+  text-underline-offset: 2px;
+}
+
 .headingH4--socialMediaComponent {
   color: #efefef;
   font-size: clamp(1.6rem, 5.3vw, 1.8rem);
@@ -108,8 +168,34 @@ body {
 }
 
 .paragraph--socialMediaComponent {
-  color: #efefef;
+  color: #f0f0f0;
   font-weight: 700;
+  letter-spacing: 1px;
+}
+.paragraph--figcaptionParagraph {
+  color: rgba(240, 240, 240, 0.9);
+  font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.paragraph--footerNavitem {
+  color: rgba(240, 240, 240, 0.9);
+  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.paragraph--address {
+  color: rgba(239, 239, 239, 0.95);
+  font-style: normal;
+  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+  font-weight: 400;
+}
+.paragraph--copyright {
+  color: rgba(239, 239, 239, 0.95);
+  font-size: clamp(1.4rem, 5.3vw, 1.6rem);
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -151,6 +237,25 @@ body {
   transform: translateY(-1px);
 }
 
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+.icon--contactIcon {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+.icon--contactIcon .icon__path--addressFill {
+  fill: #00a9fe;
+}
+@media (min-width: 320px) {
+  .icon--contactIcon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
 .socialMediaComponent {
   display: flex;
   flex-direction: column;
@@ -189,6 +294,100 @@ body {
     gap: 1rem;
     gap: 3.5rem;
   }
+}
+
+.footer {
+  background-color: #1E2020;
+  padding: 2rem 1rem;
+}
+.footer__footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2.5rem;
+}
+.footer__figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__logo {
+  display: block;
+  width: min(75%, 40rem);
+  height: auto;
+}
+.footer__figcaption .headingH2--figcaptionHeadingH2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0;
+  margin-bottom: 0.75rem;
+}
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+}
+.footer__address .footer__addressLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.5rem;
+}
+@media (min-width: 320px) {
+  .footer__address {
+    gap: 0.75rem;
+  }
+  .footer__address .footer__addressLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    gap: 0.75rem;
+  }
+}
+.footer__copyrightAndWebdevContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2.5rem;
+}
+.footer__copyright .headingH3--copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__copyright .headingH3--copyrightName {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0;
+}
+.footer__webdev .headingH3--webdev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

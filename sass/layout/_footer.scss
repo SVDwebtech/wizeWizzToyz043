@@ -1,2 +1,61 @@
 .footer {
+      
+      background-color: $cp-dark;
+      padding: 2rem 1rem;
+      &__footerContainer {
+            @include displayFlexColumn;
+            gap: 2.5rem;
+      }
+      &__figure {
+            @include displayFlexColumn;
+      }
+      &__logo {
+            display: block;
+            width: min(75%, 40rem);
+            height: auto;
+      }
+      &__figcaption {
+            .headingH2--figcaptionHeadingH2 {
+                  @include displayFlexRow;
+                  gap: 0;
+                  margin-bottom: .75rem;
+            }
+      }
+      &__nav {
+
+      }
+      &__address {
+            @include displayFlexColumn;
+            gap: 2rem;
+            .footer__addressLink {
+                  @include displayFlexColumn;
+                  gap: .5rem;
+            }
+            @media (min-width: 320px) {
+                  gap: .75rem;
+                  .footer__addressLink {
+                        @include displayFlexRow;
+                        gap: .75rem;
+                  }
+            }
+      }
+      &__copyrightAndWebdevContainer {
+            @include displayFlexColumn;
+            gap: 2.5rem;
+      }
+      &__copyright {
+            .headingH3--copyright {
+                  @include displayFlexRow;
+            }
+            .headingH3--copyrightName {
+                  @include displayFlexRow;
+                  gap: 0;
+            }
+      }
+      &__webdev {
+            .headingH3--webdev {
+                  @include displayFlexColumn;
+                  gap: .5rem;
+            } 
+      }
 }

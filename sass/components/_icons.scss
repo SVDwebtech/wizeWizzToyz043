@@ -1,0 +1,16 @@
+.icon {
+      width: 2rem;
+      height: 2rem;
+      &--contactIcon {     
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            .icon__path--addressFill {
+                  fill: $cp-light-blue;
+            }
+            @media (min-width: 320px) {
+                  width: 2rem;
+                  height: 2rem;
+            }
+      }
+}

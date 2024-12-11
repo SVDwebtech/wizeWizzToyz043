@@ -20,6 +20,65 @@ body {
 	line-height: 1.2;
 	}
 }
+.headingH2 {
+	color: $cp-white;
+	font-size: clamp(2rem, 5.3vw, 2.2rem);
+	font-weight: 900;
+	letter-spacing: 3px;
+	line-height: 1;
+	text-align: center;
+	&--figcaptionHeadingH2Wize {
+		color: $cp-red;
+	}
+	&--figcaptionHeadingH2Wizz {
+		color: $cp-green;
+	}
+	&--figcaptionHeadingH2Toyz {
+		color: $cp-blue;
+	}
+}
+.headingH3 {
+		color: $cp-white;
+		font-size: clamp(1.8rem, 5.3vw, 2rem);
+		font-weight: 700;
+		letter-spacing: 2px;
+		line-height: 1;
+		text-align: center;
+	&--copyright {
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		font-weight: 400;
+		letter-spacing: 1px;
+	}
+	&--copyrightSymbol {
+		font-size: clamp(1.6rem, 5.3vw, 1.8rem);
+	}
+	&--copyrightName {
+		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+		font-weight: 700;
+	}
+	&--copyrightNameWize {
+		color: $cp-red;
+	}
+	&--copyrightNameWizz {
+		color: $cp-green;
+	}
+	&--copyrightNameToyz {
+		color: $cp-blue;
+	}
+	&--webdev {
+		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		font-weight: 400;
+		letter-spacing: 1px;
+	}
+	&--webdevIntro {
+		color: rgba($cp-white, .95);
+	}
+	&--webdevName {
+		color: $cf-light-blue;
+		text-decoration: underline 2px solid;
+		text-underline-offset: 2px;
+	}
+}
 .headingH4 {
 	&--socialMediaComponent {
 		color: $cp-white;
@@ -30,8 +89,36 @@ body {
 }
 .paragraph {
 	&--socialMediaComponent {
-		color: $cp-white;
+		color: $cf-white;
 		font-weight: 700;
+		letter-spacing: 1px;
+	}
+	&--figcaptionParagraph {
+		color: rgba($cf-white, .9);
+		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+		font-weight: 400;
+		letter-spacing: 1px;
+		line-height: 1.2;
+	}
+	&--footerNavitem {
+		color: rgba($cf-white, .9);
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		// text-decoration: underline 1px solid;
+		// text-underline-offset: 3px;
+	}
+	&--address {
+		color: rgba($cp-white, .95);
+		font-style: normal;
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		font-weight: 400;
+	}
+	&--copyright {
+		color: rgba($cp-white, .95);
+		font-size: clamp(1.4rem, 5.3vw, 1.6rem);
+		font-weight: 400;
 		letter-spacing: 1px;
 	}	
 }

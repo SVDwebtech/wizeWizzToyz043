@@ -4,7 +4,7 @@
   "description": "online shop for educational toys for children and young adults",
   "main": "app.js",
   "scripts": {
-    "watch:sass": "sass --watch sass/main.scss public/css/main.css",
+    "watch:sass": "sass --watch sass/main.scss:public/css/main.css",
     "nodemon-watch": "nodemon index.js -e *",
     "dev": "npm-run-all --parallel watch:sass nodemon-watch"
   },
