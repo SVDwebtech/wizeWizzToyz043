@@ -84,7 +84,7 @@ a {
 
 body {
   color: #898989;
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito Sans", serif;
   font-size: clamp(1.4rem, 4.6vw, 1.6rem);
   font-weight: 400;
   text-align: center;
@@ -93,7 +93,7 @@ body {
 
 .header__headingH1 {
   color: #f0f0f0;
-  font-family: "Rum Raisin", sans-serif;
+  font-family: "Irish Grover", serif;
   font-size: clamp(2.2rem, 6.5vw, 2.6rem);
   text-align: center;
   line-height: 1.2;
@@ -101,6 +101,7 @@ body {
 
 .headingH2 {
   color: #efefef;
+  font-family: "Irish Grover", serif;
   font-size: clamp(2rem, 5.3vw, 2.2rem);
   font-weight: 900;
   letter-spacing: 3px;
@@ -119,6 +120,7 @@ body {
 
 .headingH3 {
   color: #efefef;
+  font-family: "Nunito Sans", serif;
   font-size: clamp(1.8rem, 5.3vw, 2rem);
   font-weight: 700;
   letter-spacing: 2px;
@@ -134,6 +136,7 @@ body {
   font-size: clamp(1.6rem, 5.3vw, 1.8rem);
 }
 .headingH3--copyrightName {
+  font-family: "Irish Grover", serif;
   font-size: clamp(1.6rem, 4.5vw, 1.8rem);
   font-weight: 700;
 }
@@ -176,20 +179,21 @@ body {
   color: rgba(240, 240, 240, 0.9);
   font-size: clamp(1.6rem, 4.5vw, 1.8rem);
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   line-height: 1.2;
 }
 .paragraph--footerNavitem {
   color: rgba(240, 240, 240, 0.9);
+  font-family: "Fredoka", serif;
   font-size: clamp(1.4rem, 4.5vw, 1.6rem);
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-transform: uppercase;
 }
 .paragraph--address {
   color: rgba(239, 239, 239, 0.95);
   font-style: normal;
-  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+  font-size: clamp(1.4rem, 4.4vw, 1.6rem);
   font-weight: 400;
 }
 .paragraph--copyright {
