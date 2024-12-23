@@ -6,5 +6,5 @@ const getCurrentYear = () => {
       currentYearEl.textContent = new Date().getFullYear();
 }
 
-// exports
+// export getCurrentYear function to app.js
 export default getCurrentYear;
