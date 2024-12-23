@@ -1,21 +1,6 @@
 // sass main import
-@import "abstracts/variables";
-@import "abstracts/mixins";
-
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-
-@import "components/buttons";
-@import "components/icons";
-@import "components/linkDiv";
-@import "components/navigation";
-@import "components/socialMedia";
-
-@import "layout/footer";
-@import "layout/header";
-@import "layout/main";
-@import "layout/navbar";
-
-@import "pages/home";
+@import "abstracts/index";
+@import "base/index";
+@import "components/index";
+@import "layout/index";
+@import "pages/index";
