@@ -1,9 +1,11 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 /* General Navbar Styles */
 .navbar {
       @include displayFlexRow;
       justify-content: space-between;
       padding: 1rem 2rem;
-      background-color: $cp-white;
+      background-color: rgba($cp-white, .5);
     
       &__logo {
             @include displayFlexRow;

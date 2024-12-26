@@ -1,4 +1,4 @@
-@import "animations";
-@import "base";
-@import "typography";
-@import "utilities";
+@use "./animations" as *;
+@use "./base" as *;
+@use "./typography" as *;
+@use "./utilities" as *;

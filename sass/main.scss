@@ -1,6 +1,5 @@
-// sass main import
-@import "abstracts/index";
-@import "base/index";
-@import "components/index";
-@import "layout/index";
-@import "pages/index";
+@use "./abstracts/index" as *;
+@use "./base/index" as *;
+@use "./components/index" as *;
+@use "./layout/index" as *;
+@use "./pages/index" as *;

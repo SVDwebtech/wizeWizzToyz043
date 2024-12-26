@@ -1,5 +1,5 @@
-@import "buttons";
-@import "icons";
-@import "linkDiv";
-@import "navbar";
-@import "socialMedia";
+@use "./buttons" as *;
+@use "./icons" as *;
+@use "./linkDiv" as *;
+@use "./navbar" as *;
+@use "./socialMedia" as *;

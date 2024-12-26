@@ -1,5 +1,5 @@
-// base
-// basic reset
+@use '../abstracts/index' as *;
+
 *,
 *::after,
 *::before {
@@ -13,19 +13,15 @@ html {
 	/* 	10px / 16px *100 = 62.5% */
 	font-size: 62.5%; // 1rem = 10px
 	@include respond(tab-port) {
-	/* 	11px / 16px *100 = 68.75% */
 		font-size: 68.75%; 
 	}
 	@include respond(tab-land) {
-	/* 	12px / 16px *100 = 75% */
 		font-size: 75%;  
 	}
 	@include respond(desk) {
-	/* 	13px / 16px *100 = 81.25% */
 		font-size: 81.25%; 
 	}
 	@include respond(big-desk) {
-	/* 	15px / 16px *100 = 93.75% */
 		font-size: 93.75%; 
 	}
 }
