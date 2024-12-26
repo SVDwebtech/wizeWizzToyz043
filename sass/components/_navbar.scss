@@ -1,16 +1,19 @@
 /* General Navbar Styles */
 .navbar {
-      display: flex;
+      @include displayFlexRow;
       justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #333;
-      color: white;
+      padding: 1rem 2rem;
+      background-color: $cp-white;
     
       &__logo {
-        font-size: 24px;
-        text-decoration: none;
-        color: white;
+            @include displayFlexRow;
+            gap: 0rem;
+      }
+
+      &__logoImg {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
       }
     
       &__menu {

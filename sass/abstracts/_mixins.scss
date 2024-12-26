@@ -62,8 +62,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 	color: transparent;
 }
 
-////////////////////////////////////////////////////////////
-/// display flex column
+// display flex column
 @mixin displayFlexColumn {
 	display: flex;
 	flex-direction: column;
@@ -71,8 +70,8 @@ ORDER: base + typography > general layout + grid > page layout > components
 	align-items: center;
 	gap: 1rem;
 }
-////////////////////////////////////////////////////////////
-/// display flex row
+
+// display flex row
 @mixin displayFlexRow {
 	display: flex;
 	flex-direction: row;

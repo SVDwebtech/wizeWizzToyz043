@@ -108,6 +108,21 @@ body {
 	}
 }
 .paragraph {
+	&--navLogo {
+		font-family: "Irish Grover", serif;
+		font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+		font-weight: 900;
+		text-decoration: none;
+	}
+	&--navLogoNameWize {
+		color: $cp-red;
+	}
+	&--navLogoNameWizz {
+		color: $cp-green;
+	}
+	&--navLogoNameToyz {
+		color: $cp-blue;
+	}
 	&--socialMediaComponent {
 		color: $cf-white;
 		font-weight: 700;
