@@ -4,18 +4,19 @@
 .navbar {
       @include displayFlexRow;
       justify-content: space-between;
-      padding: 1rem 2rem;
-      background-color: rgba($cp-white, .5);
+      padding: .75rem 2rem;
+      background: linear-gradient(to bottom, $cp-dark 55%, rgba($cp-dark-grey, .05) 85%, rgba($cp-dark-grey, .1) 92%, rgba($cp-dark-grey, .12) 98%);
     
       &__logo {
             @include displayFlexRow;
-            gap: 0rem;
+            gap: .45rem;
       }
 
       &__logoImg {
             display: inline-block;
-            width: 3rem;
-            height: 3rem;
+            width: clamp(5rem, 17vw, 5.5rem);
+            height: clamp(5rem, 17vw, 5.5rem);
+            margin-right: .35rem;
       }
     
       &__menu {
@@ -48,7 +49,7 @@
         .navbar__hamburger-icon {
           width: 30px;
           height: 3px;
-          background-color: white;
+          background-color: $cp-light-blue;
           display: block;
           position: relative;
     
@@ -57,7 +58,7 @@
             content: "";
             width: 30px;
             height: 3px;
-            background-color: white;
+            background-color: $cp-light-blue;
             position: absolute;
             left: 0;
             transition: 0.3s;
@@ -93,14 +94,15 @@
           flex-direction: column;
           background-color: #333;
           position: absolute;
-          top: 60px;
-          right: 20px;
-          width: 200px;
-          padding: 10px 0;
+          top: clamp(65px, 20vw, 70px);
+          right: 0;
+          width: 100%;
+          height: 95vh;
+          padding: 5rem 0;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     
           &-item {
-            margin: 10px 0;
+            margin: 1rem 0;
           }
         }
     
