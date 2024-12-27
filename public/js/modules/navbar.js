@@ -8,7 +8,9 @@ const navbarLogic = () => {
       document.addEventListener("DOMContentLoaded", function() {
             hamburgerButton.addEventListener("click", function() {
                 navbarMenu.classList.toggle("active");
+                navbarMenu.classList.toggle("navbarMenuOpenAnimation");
                 icon.classList.toggle("active");
+
             });
       });
 }

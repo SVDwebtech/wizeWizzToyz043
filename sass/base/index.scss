@@ -1,4 +1,7 @@
-@use "./animations" as *;
+@use "./animations" as animations;
 @use "./base" as *;
 @use "./typography" as *;
 @use "./utilities" as *;
+
+// Re-export contents
+@forward './animations';

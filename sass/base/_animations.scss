@@ -1,13 +1,15 @@
-// // animations
-// @keyframes animateNavListContainerMoveIn {
-//   0% {
-//     transform: translateX(-100%);
-//   }
+// animations
+@keyframes navbarMenuOpen {
+  0% {
+      transform: scale(.2);
+      opacity: .2;
+  }
 
-//   100% {
-//     transform: translateX(0%);
-//   }
-// }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
 
 // @keyframes animateNavListContainerMoveOut {
 //   0% {
