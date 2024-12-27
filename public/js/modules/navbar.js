@@ -17,7 +17,7 @@ const navbarLogic = () => {
                               counter = 200 + counter;
                               setTimeout(function() {
                                     item.classList.toggle("navItemMoveInAnimation");
-                              }, (1500 + counter))
+                              }, (400 + counter))
                         }
                   }
                   icon.classList.toggle("active");

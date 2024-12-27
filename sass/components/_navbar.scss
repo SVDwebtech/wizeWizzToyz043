@@ -105,12 +105,12 @@
           height: 95vh;
           padding: 5rem 0;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-          transition: all 2s;
+          transition: all .8s;
     
           &-item {
             margin: 1rem 0;
             opacity: 0;
-            transition: all 2s;
+            transition: all .75s;
           }
         }
     
@@ -127,10 +127,10 @@
     }
 
 .navbarMenuOpenAnimation {
-  animation: navbarMenuOpen 2s;
-  transform-origin: top right;
+  animation: navbarMenuOpen .8s;
+  transform-origin: top;
 }
 
 .navItemMoveInAnimation {
-  animation: navItemMoveIn 2s forwards ;
+  animation: navItemMoveIn .75s forwards ;
 }
