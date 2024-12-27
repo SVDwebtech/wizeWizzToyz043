@@ -27,6 +27,16 @@ ORDER: base + typography > general layout + grid > page layout > components
     opacity: 1;
   }
 }
+@keyframes navItemMoveIn {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 *,
 *::after,
 *::before {
@@ -379,6 +389,8 @@ body {
   }
   .navbar__menu-item {
     margin: 1rem 0;
+    opacity: 0;
+    transition: all 2s;
   }
   .navbar__hamburger {
     display: block;
@@ -393,6 +405,10 @@ body {
 .navbarMenuOpenAnimation {
   animation: navbarMenuOpen 2s;
   transform-origin: top right;
+}
+
+.navItemMoveInAnimation {
+  animation: navItemMoveIn 2s forwards;
 }
 
 .socialMediaComponent {

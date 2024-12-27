@@ -109,6 +109,8 @@
     
           &-item {
             margin: 1rem 0;
+            opacity: 0;
+            transition: all 2s;
           }
         }
     
@@ -127,4 +129,8 @@
 .navbarMenuOpenAnimation {
   animation: navbarMenuOpen 2s;
   transform-origin: top right;
+}
+
+.navItemMoveInAnimation {
+  animation: navItemMoveIn 2s forwards ;
 }

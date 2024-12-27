@@ -21,16 +21,17 @@
 //   }
 // }
 
-// @keyframes animateNavItemsMoveIn {
-//   0% {
-//     transform: translateY(25px);
-//   }
+@keyframes navItemMoveIn {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
 
-//   100% {
-//     transform: translateY(0px);
-//     opacity: 1;
-//   }
-// }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 
 // @keyframes animateNavItemsMoveOut {
 //   0% {
