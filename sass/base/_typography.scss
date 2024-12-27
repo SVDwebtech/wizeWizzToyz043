@@ -124,6 +124,17 @@ body {
 	&--navLogoNameToyz {
 		color: $cp-blue;
 	}
+	&--navlink, &--footerNavitem {
+		color: rgba($cf-white, .9);
+		// font-family: "Irish Grover", serif;
+		font-family: "Fredoka", serif;
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		font-weight: 500;
+		letter-spacing: 0px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 3px rgba(black, 1);
+	}
 	&--socialMediaComponent {
 		color: $cf-white;
 		font-weight: 700;
@@ -135,16 +146,6 @@ body {
 		font-weight: 400;
 		letter-spacing: 0px;
 		line-height: 1.2;
-	}
-	&--footerNavitem {
-		color: rgba($cf-white, .9);
-		font-family: "Fredoka", serif;
-		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
-		font-weight: 400;
-		letter-spacing: 0px;
-		text-transform: uppercase;
-		// text-decoration: underline 1px solid;
-		// text-underline-offset: 3px;
 	}
 	&--address {
 		color: rgba($cp-white, .95);
