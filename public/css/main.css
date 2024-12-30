@@ -302,7 +302,7 @@ body {
   gap: 1rem;
   justify-content: space-between;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(to bottom, #1E2020 55%, rgba(62, 62, 62, 0.05) 85%, rgba(62, 62, 62, 0.1) 92%, rgba(62, 62, 62, 0.12) 98%);
+  background: linear-gradient(to bottom, #1E2020 55%, rgba(62, 62, 62, 0.05) 85%, rgba(62, 62, 62, 0.1) 92%, rgba(62, 62, 62, 0.12) 98%), linear-gradient(to bottom, #1E2020, rgba(30, 32, 32, 0.97));
   position: fixed;
   top: 0;
   left: 0;

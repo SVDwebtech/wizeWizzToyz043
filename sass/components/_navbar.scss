@@ -12,7 +12,7 @@
     rgba($cp-dark-grey, 0.05) 85%,
     rgba($cp-dark-grey, 0.1) 92%,
     rgba($cp-dark-grey, 0.12) 98%
-  );
+  ), linear-gradient(to bottom, $cp-dark, rgba($cp-dark, .97));
   position: fixed;
   top: 0;
   left: 0;
