@@ -303,6 +303,10 @@ body {
   justify-content: space-between;
   padding: 0.75rem 1.5rem;
   background: linear-gradient(to bottom, #1E2020 55%, rgba(62, 62, 62, 0.05) 85%, rgba(62, 62, 62, 0.1) 92%, rgba(62, 62, 62, 0.12) 98%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .navbar__logo {
   display: flex;

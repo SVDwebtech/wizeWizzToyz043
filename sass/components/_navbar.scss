@@ -13,6 +13,10 @@
     rgba($cp-dark-grey, 0.1) 92%,
     rgba($cp-dark-grey, 0.12) 98%
   );
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   &__logo {
     @include displayFlexRow;
