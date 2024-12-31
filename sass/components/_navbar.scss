@@ -67,10 +67,13 @@
     background: none;
     border: none;
     cursor: pointer;
+    width: 3.5em;
+    height: 3.5rem;
 
     .navbar__hamburger-icon {
       width: 30px;
       height: 3px;
+      margin: 0 auto;
       background-color: $cp-light-blue;
       display: block;
       position: relative;

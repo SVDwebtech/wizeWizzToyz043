@@ -351,10 +351,13 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  width: 3.5em;
+  height: 3.5rem;
 }
 .navbar__hamburger .navbar__hamburger-icon {
   width: 30px;
   height: 3px;
+  margin: 0 auto;
   background-color: #00a9fe;
   display: block;
   position: relative;
