@@ -1,4 +1,4 @@
-// navbar logic to toggle between hamburger btn and navabar menu
+// Navbar logic to toggle between hamburger btn and navabar menu
 const navbarLogic = () => {
       document.addEventListener('DOMContentLoaded', () => {
             const hamburger = document.querySelector('.navbar__hamburger');

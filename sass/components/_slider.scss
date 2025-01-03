@@ -1,0 +1,73 @@
+@use '../abstracts/index' as *;
+
+.slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    
+      &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+    
+        &.active {
+          opacity: 1;
+        }
+      }
+    
+      &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      &__content {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+    
+        &__heading {
+          margin: 0;
+          font-size: 1.5rem;
+        }
+    
+        &__subheading {
+          margin: 10px 0 0;
+          font-size: 1rem;
+        }
+      }
+    
+      &__indicators {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    
+        &__indicator {
+          width: 10px;
+          height: 10px;
+          background: #ccc;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: background 0.3s;
+    
+          &.active {
+            background: #333;
+          }
+        }
+      }
+    }
