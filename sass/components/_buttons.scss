@@ -1,30 +1,50 @@
-@use '../abstracts/variables' as *;
-// style button
+@use '../abstracts/index' as *;
+
 .btn {  
-    border: 2px solid white;
+    border: 2px solid $cp-white;
     border-radius: .45rem;
     box-shadow: $bs-btn;
-
-    width: fit-content;
-
-    padding: .60em .85em;
-    margin: 0 auto;
-
+    width: 100%;
+    padding: .55em 1.25em;
     cursor: pointer;
     backface-visibility: hidden;
     transition: all .2s;
 
     &:link, &:visited {
-        text-decoration: none;
         transform: translateY(0px);
     }
 
-    &:active {
-        border-bottom: 2px solid $cp-grey;
-        border-right: 2px solid $cp-grey;
-        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
-        transform: translateY(-1px);
+    &--cta-header {
+        @include displayFlexColumn;
+        width: min(100%, 25rem);
+        min-height: 5rem;
     }
 
+    &--primary {
+        background-color: #0389b5;
 
+        &:hover {
+            background-color: #00befe;
+        }
+    }
+
+    &--secondary {
+        background-color: rgba($cp-green, .5);
+
+        &:hover {
+            background-color: #02bf05;
+        }
+    }
+
+    &--primary:hover, &--secondary:hover {
+        border: 3px solid $cp-white;
+        transform: scale(1.03);
+    }
+
+    &--primary:active, &--secondary:active {
+        border: 2px solid $cp-light-grey;
+        border-top: 3px solid $cp-white;
+        box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .35);
+        transform: translateY(2px); /* Combine hover and active effects */
+    }
 }

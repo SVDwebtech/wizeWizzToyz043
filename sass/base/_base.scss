@@ -28,12 +28,6 @@ html {
 
 body {
 	background-color: $cp-dark;
-	/* This makes dealing with the sizes of elements much easier, 
-		and generally eliminates a number of pitfalls you can stumble on
-		 while laying out your content. */
-	/* The width and height properties include the content, padding, and border, 
-		but do not include the margin.  Note that padding and border will be inside 
-		of the box. */
 	box-sizing: border-box;
 	// for position absolute iro popup component
 	position: relative;

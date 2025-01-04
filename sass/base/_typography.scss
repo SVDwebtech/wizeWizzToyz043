@@ -160,7 +160,21 @@ body {
 		letter-spacing: 1px;
 	}	
 }
-.btn {	
+.btn {
+	color: $cf-white;
+	font-size: clamp(1.4rem, 5vw, 1.8rem);
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	&:link, &:visited {
+		text-decoration: none;
+	}
+	&--cta-header:hover {
+		font-weight: 800;
+	}
+	&--signUp {
+		font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+	}	
 }
 .footer {
 }
