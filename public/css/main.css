@@ -93,7 +93,7 @@ a {
 }
 
 body {
-  color: #898989;
+  color: #1E2020;
   font-family: "Nunito Sans", serif;
   font-size: clamp(1.4rem, 4.6vw, 1.6rem);
   font-weight: 400;
@@ -101,11 +101,32 @@ body {
   line-height: 1.6;
 }
 
-.header__headingH1 {
-  color: #f0f0f0;
+.headerLogo__heading {
+  color: #1E2020;
   font-family: "Irish Grover", serif;
-  font-size: clamp(2.2rem, 6.5vw, 2.6rem);
+  font-size: clamp(2.8rem, 9.5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: 3px;
   text-align: center;
+  text-shadow: 1px 1px 3px #1e2020;
+  line-height: 1.2;
+}
+.headerLogo__headingWize {
+  color: rgb(186, 0, 0);
+}
+.headerLogo__headingWizz {
+  color: rgb(0, 171, 3);
+}
+.headerLogo__headingToyz {
+  color: #003cb3;
+}
+.headerLogo__tagline {
+  color: #f0f0f0;
+  font-family: "Nunito Sans", serif;
+  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 1px #1e2020;
   line-height: 1.2;
 }
 
@@ -353,6 +374,39 @@ body {
     width: 2rem;
     height: 2rem;
   }
+}
+
+.headerLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 1 rem;
+  /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border for a frosty edge */
+  border-radius: 0.45rem; /* Rounded corners */
+  backdrop-filter: blur(8px); /* Blurring the background */
+  box-shadow: 0 4px 6px rgba(30, 30, 30, 0.45); /* Adding a slight shadow */
+  width: min(85%, 40rem);
+  padding: 2rem 2rem 3rem;
+  position: relative;
+  z-index: 2;
+}
+.headerLogo__image {
+  display: block;
+  width: min(100%, 25rem);
+  height: auto;
+  margin: 0 auto;
+}
+.headerLogo__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.25rem;
 }
 
 /* General Navbar Styles */

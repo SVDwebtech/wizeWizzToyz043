@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+
 // typography
 // heading h1 & h2
 	// font-family: "Irish Grover", serif;
@@ -22,20 +23,41 @@
 	// font-variation-settings: "wdth" 100, "YTLC" 500;
     
 body {
-	color: $cf-grey;
+	color: $cf-dark;
 	font-family: "Nunito Sans", serif;
 	font-size: clamp(1.4rem, 4.6vw, 1.6rem);
 	font-weight: 400;
 	text-align: center;
 	line-height: 1.6;
 }
-.header {
-	&__headingH1 {
-	color: $cf-white;
+.headerLogo {
+	&__heading {
+	color: $cf-dark;
 	font-family: "Irish Grover", serif;
-	font-size: clamp(2.2rem, 6.5vw, 2.6rem);
+	font-size: clamp(2.8rem, 9.5vw, 3.8rem);
+	font-weight: 900;
+	letter-spacing: 3px;
 	text-align: center;
+	text-shadow: 1px 1px 3px rgba($cf-dark, 1);
 	line-height: 1.2;
+	}
+	&__headingWize {
+		color: $cf-red;
+	}
+	&__headingWizz {
+		color: $cf-green;
+	}
+	&__headingToyz {
+		color: $cf-blue;
+	}
+	&__tagline {
+		color: $cf-white;
+		font-family: "Nunito Sans", serif;
+		font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+		font-weight: 700;
+		text-align: center;
+		text-shadow: 2px 2px 1px rgba($cf-dark, 1);
+		line-height: 1.2;
 	}
 }
 .headingH2 {

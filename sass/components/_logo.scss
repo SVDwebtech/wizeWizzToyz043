@@ -1,0 +1,30 @@
+@use '../abstracts/index' as *;
+
+.headerLogo {
+      @include displayFlexColumn;
+      gap: 1 rem;
+      
+      /* Frosted glass effect */
+      background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border for a frosty edge */
+      border-radius: .45rem; /* Rounded corners */
+      backdrop-filter: blur(8px); /* Blurring the background */
+      box-shadow: 0 4px 6px rgba(30, 30, 30, 0.45); /* Adding a slight shadow */
+      
+      width: min(85%, 40rem);
+      padding: 2rem 2rem 3rem;
+      position: relative;
+      z-index: 2;
+
+      &__image {
+            display: block;
+            width: min(100%, 25rem);
+            height: auto;
+            margin: 0 auto;
+      }
+
+      &__heading {
+            @include displayFlexRow;
+            gap: .25rem;
+      }
+}
