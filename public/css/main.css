@@ -307,13 +307,13 @@ body {
   min-height: 5rem;
 }
 .btn--primary {
-  background-color: #0389b5;
+  background-color: rgba(3, 137, 181, 0.85);
 }
 .btn--primary:hover {
   background-color: #00befe;
 }
 .btn--secondary {
-  background-color: rgba(0, 171, 3, 0.5);
+  background-color: rgba(15, 137, 17, 0.85);
 }
 .btn--secondary:hover {
   background-color: #02bf05;
@@ -336,12 +336,6 @@ body {
   align-items: center;
   gap: 1rem;
   gap: 1 rem;
-  /* Frosted glass effect */
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border for a frosty edge */
-  border-radius: 0.45rem; /* Rounded corners */
-  backdrop-filter: blur(8px); /* Blurring the background */
-  box-shadow: 0 4px 6px rgba(30, 30, 30, 0.45); /* Adding a slight shadow */
   width: min(85%, 40rem);
   padding: 2rem 2rem 3rem;
   position: relative;

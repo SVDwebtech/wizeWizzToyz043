@@ -21,7 +21,7 @@
     }
 
     &--primary {
-        background-color: #0389b5;
+        background-color: rgba(#0389b5, .85);
 
         &:hover {
             background-color: #00befe;
@@ -29,7 +29,7 @@
     }
 
     &--secondary {
-        background-color: rgba($cp-green, .5);
+        background-color: rgba(#0f8911, .85);
 
         &:hover {
             background-color: #02bf05;
