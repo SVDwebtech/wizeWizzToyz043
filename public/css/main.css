@@ -554,23 +554,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.slider__content {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-}
-.slider__content__heading {
-  margin: 0;
-  font-size: 1.5rem;
-}
-.slider__content__subheading {
-  margin: 10px 0 0;
-  font-size: 1rem;
-}
 .slider__indicators {
   position: absolute;
   bottom: 10%;

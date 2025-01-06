@@ -29,26 +29,6 @@
         object-fit: cover;
       }
     
-      &__content {
-        position: absolute;
-        top: 10%;
-        right: 10%;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-    
-        &__heading {
-          margin: 0;
-          font-size: 1.5rem;
-        }
-    
-        &__subheading {
-          margin: 10px 0 0;
-          font-size: 1rem;
-        }
-      }
-    
       &__indicators {
         position: absolute;
         bottom: 10%;
