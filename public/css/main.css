@@ -529,49 +529,78 @@ body {
 }
 
 .slider {
+  width: 100%;
+  min-height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+}
+.slider__imageContainer {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-.slider__slide {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
 }
-.slider__slide.active {
-  opacity: 1;
-}
-.slider__image {
+.slider__img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.slider__indicators {
+  object-position: center;
+  opacity: 0;
+  transition: opacity 2s;
   position: absolute;
-  bottom: 10%;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+.slider__imgVisible {
+  opacity: 1;
+}
+.slider__btn {
+  cursor: pointer;
+  background-color: rgba(0, 169, 254, 0.85);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 3rem;
+  z-index: 100;
+}
+.slider__navBtnColor {
+  stroke: white;
+}
+.slider__btn--prev {
+  left: 20%;
+}
+.slider__btn--next {
+  right: 20%;
+}
+.slider__sliderIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 4.3rem;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
+  z-index: 100;
 }
-.slider__indicators__indicator {
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
+.slider__dot {
+  border-radius: 100%;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: aliceblue;
 }
-.slider__indicators__indicator.active {
-  background: #333;
+
+.active {
+  background-color: rgb(9, 255, 0);
+  border: 1px solid #efefef;
+  border-radius: 100%;
 }
 
 .socialMediaComponent {
@@ -712,7 +741,6 @@ header {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background: #1E2020;
   position: relative;
 }
 
@@ -722,11 +750,11 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 3rem;
-  width: 100%;
-  height: 100%;
-  padding: 12rem 0 0;
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 60rem;
+  padding: 10rem 0 8rem;
 }
 
 /*# sourceMappingURL=main.css.map */

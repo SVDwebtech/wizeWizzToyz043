@@ -1,53 +1,88 @@
 @use '../abstracts/index' as *;
-
 .slider {
+      width: 100%;
+      min-height: 100%;
+
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 1;
-    
-      &__slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 3s ease-in-out;
-    
-        &.active {
-          opacity: 1;
-        }
+
+      &__imageContainer {
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
       }
-    
-      &__image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+
+      &__img {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+            opacity: 0;
+            transition: opacity 2s;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -100;
       }
-    
-      &__indicators {
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 10px;
-    
-        &__indicator {
-          width: 10px;
-          height: 10px;
-          background: #ccc;
-          border-radius: 50%;
-          cursor: pointer;
-          transition: background 0.3s;
-    
-          &.active {
-            background: #333;
-          }
-        }
+
+      &__imgVisible {
+            opacity: 1;
       }
-    }
+
+      &__btn {
+            cursor: pointer;
+            background-color: rgba($cp-light-blue, .85);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+            width: 3.5rem;
+            height: 3.5rem;
+            padding: .5rem;
+            position: absolute;
+            bottom: 3rem;
+            z-index: 100;
+      }
+
+      &__navBtnColor {
+            stroke: white;
+      }
+
+      &__btn--prev {
+            left: 20%;
+      }
+
+      &__btn--next {
+            right: 20%;
+      }
+
+      &__sliderIndex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            position: absolute;
+            bottom: 4.3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+      }
+
+      &__dot {
+            border-radius: 100%;
+            width: .75rem;
+            height: .75rem;
+            background-color: aliceblue;
+      }
+}
+
+.active {
+      background-color: rgb(9, 255, 0);
+      border: 1px solid $cp-white;
+      border-radius: 100%;
+}
